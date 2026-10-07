@@ -3,9 +3,35 @@
 
 #include <iostream>
 
+using namespace std;
+
 int main()
 {
     std::cout << "Hello World!\n";
+    int wiekUcznia = 18;
+	bool isSober = true;
+	if (wiekUcznia >= 18 && isSober) {
+		std::cout << "Uczen moze wejsc do klubu.\n";
+	}
+	else {
+		std::cout << "Uczen nie moze wejsc do klubu.\n";
+	}
+	bool platnoscKarta = true;
+	bool platnoscPrzelewem = true;
+	int liczbaWybranychFormPlatnosci = 0;
+	if (platnoscKarta != platnoscPrzelewem) {
+		std::cout << "Platnosc zaakceptowana.\n";
+	}
+	else if(platnoscKarta == true && platnoscPrzelewem == true) {
+		liczbaWybranychFormPlatnosci = 2;
+		std::cout << "Platnosc odrzucona. Wybrano dwie formy platnosci.\n";
+		cout << liczbaWybranychFormPlatnosci << "\n";
+	}
+	else {
+		std::cout << "Platnosc odrzucona. Nie wybrano zadnej formy platnosci.\n";
+	}
+	cout << liczbaWybranychFormPlatnosci;
+	return 0;
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
